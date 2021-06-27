@@ -2,6 +2,7 @@
 # Reverse the string
 # compare if string is equal
 # challenge - use functions
+word = None
 
 def wordInput():
   word = input("Please type a word you would like to see if it's a palindrome\n").lower()
@@ -11,7 +12,7 @@ def reverseWord():
   reversedWord = word[::-1]
   return reversedWord
 
-def paladromeCheck():
+def palindromeCheck():
   if word == reverseWord:
     print("Yes, you have entered a palindrome")
   else:
@@ -21,6 +22,6 @@ def main():
   print("\nPalindrome Checker")
   wordInput
   reverseWord
-  paladromeCheck
+  palindromeCheck
 
 main()

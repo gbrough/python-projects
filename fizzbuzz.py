@@ -3,7 +3,7 @@
 # For numbers divisible by 5 print buzz
 # For numbers divisible by 15 print fizzbuzz
 
-
+#%%
 def fizzbuzz():
   for i in range(1,101):
     if (i % 15 == 0):
@@ -17,3 +17,4 @@ def fizzbuzz():
 
 
 fizzbuzz()
+# %%
