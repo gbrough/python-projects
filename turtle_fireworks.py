@@ -1,46 +1,44 @@
-# Create a static firework
-# Update firework colors
+# Create a static star
+# Update star colors
 # Update background color
-# Change firework location
-# Create multiple fireworks
-# draw multiple starts at once 
-# remove nested for loops
+# Change star location
+# Create multiple stars
+# Customize
 
 import turtle
 import random
 from tkinter import *
 
-
 background = turtle.Screen()
-background.bgcolor("green")
+background.bgcolor("black")
 
 #Declare star object and set speed
-
 star = turtle.Turtle()
-star.shape("turtle")
+star.shape("circle")
 star.speed(10)
 
 # Draw the star
-for i in range(1):
+for i in range(5):
   #Set the position
   x = random.randint(-150,150)
   y = random.randint(-150,150)
+  star.penup()
   star.setposition(x,y)
+  star.pendown()
 
   #Set the size
-  size = random.randint(5,11)
+  size = random.randint(5,20)
   
   #Set the color
-  
-  # red = random.randint(0, 255)
-  # red = str("#FF0000")
-  # green = str("#00FF00")
-  # blue = str("#0000FF")
-  # star.pencolor(red,green,blue)
+  turtle.colormode(255)
+  red = random.randint(0,255)
+  green = random.randint(0,255)
+  blue = random.randint(0,255)
+  star.color(red,green,blue)
 
+  #Draw the star
   for i in range(size):
     star.forward(i*8)
     star.right(144)
-
 
 mainloop()
