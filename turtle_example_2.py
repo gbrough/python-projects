@@ -1,11 +1,9 @@
 import turtle
 import random
 
-
 star = turtle.Turtle()
 star.speed(0)
 star.getscreen().bgcolor("black")
-
 
 def drawStar(star):
     for i in range(15):
